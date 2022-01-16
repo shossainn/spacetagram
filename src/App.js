@@ -37,6 +37,8 @@ function App() {
 
   return (
     <div className="card">
+    <h1 className="logoText">Spacetagram</h1>
+      <p className="copyrightText">Brought to you by: {imageData.copyright}</p>
       <img src={imageData.url} classname="cardImg" />
       <div className="container">
         <button className="likeButton" onClick={toggleLike}>
@@ -46,9 +48,9 @@ function App() {
             // onClick={toggleLike}
           />
         </button>
-        <h2>Title {imageData.title}</h2>
-        <p>Date {imageData.date}</p>
-        <p>Description {imageData.explanation}</p>
+        <h2>Title: {imageData.title}</h2>
+        <p>Date: {imageData.date}</p>
+        <p>Description: {imageData.explanation}</p>
       </div>
     </div>
   );
