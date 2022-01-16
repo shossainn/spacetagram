@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
-
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./App.css";
@@ -26,7 +25,7 @@ function App() {
       Axios.get(
         "https://api.nasa.gov/planetary/apod?api_key=Yifzj3fA15GJ5BFvBoxKTXl8bhuBwsEKOHW1Xrgb"
       ).then(response => {
-        console.log(response);
+        // console.log(response);
         setImageData(response.data);
         console.log("imageData", imageData);
       });
@@ -37,7 +36,7 @@ function App() {
 
   return (
     <div className="card">
-    <h1 className="logoText">Spacetagram</h1>
+      <h1 className="logoText">Spacetagram</h1>
       <p className="copyrightText">Brought to you by: {imageData.copyright}</p>
       <img src={imageData.url} classname="cardImg" />
       <div className="container">
