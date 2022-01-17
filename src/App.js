@@ -38,7 +38,7 @@ function App() {
     <div className="card">
       <h1 className="logoText">Spacetagram</h1>
       <p className="copyrightText">Brought to you by: {imageData.copyright}</p>
-      <img src={imageData.url} classname="cardImg" />
+      <img src={imageData.url} className="cardImg" />
       <div className="container">
         <button className="likeButton" onClick={toggleLike}>
           <FontAwesomeIcon
